@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BD SHANTO 2K LOGIN</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #000;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .snow {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      background-image: url('https://i.postimg.cc/QNKFWg7Z/11d9a48c-5f6f-4b35-b311-740690889f0b.jpg');
+      background-size: cover;
+      opacity: 0.3;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .logo {
+      width: 125px;
+      height: 125px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 20px 5px #00f6ff;
+      animation: glow 2s infinite alternate;
+      margin-bottom: 30px;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes glow {
+      0% { box-shadow: 0 0 10px 2px #00f6ff; }
+      100% { box-shadow: 0 0 25px 10px #00f6ff; }
+    }
+
+    .input-field {
+      width: 260px;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #0ff;
+      background-color: #222;
+      color: #0ff;
+      font-size: 14px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .input-field::placeholder {
+      color: #888;
+    }
+
+    .input-field:focus {
+      box-shadow: 0 0 10px #00f6ff;
+      border-color: #00f6ff;
+    }
+
+    .submit-btn {
+      width: 260px;
+      margin-top: 15px;
+      padding: 12px;
+      background: linear-gradient(45deg, #00f6ff, #00c7e6);
+      border: none;
+      border-radius: 8px;
+      color: #111;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 0 15px #00f6ff88;
+      transition: all 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background: linear-gradient(45deg, #00c7e6, #00f6ff);
+      box-shadow: 0 0 25px #00f6ff;
+      transform: scale(1.05);
+    }
+
+    .error-text {
+      color: red;
+      margin-top: 8px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Snowfall Background -->
+  <div class="snow"></div>
+
+  <div class="container">
+    <div class="logo">
+      <img src="https://i.postimg.cc/G3g447tQ/0fd53cfe-f38d-4b25-aca1-5efdc299294f.jpg" alt="Logo">
+    </div>
+
+    <input type="text" id="gameId" class="input-field" placeholder="ENTER YOUR GAME ID">
+    <input type="password" id="password" class="input-field" placeholder="ENTER OUR PASSWORD">
+    <button class="submit-btn" onclick="validateInputs()">LOGIN HACK</button>
+
+    <div id="errorText" class="error-text">Wrong</div>
+  </div>
+
+  <script>
+    function validateInputs() {
+      const gameId = document.getElementById("gameId").value.trim();
+      const password = document.getElementById("password").value.trim();
+      const errorText = document.getElementById("errorText");
+
+      const isGameIdValid = /^\d{10}$/.test(gameId);
+      const isPasswordValid = password === "BD-SHANTO-2K-APPLE";
+
+      if (isGameIdValid && isPasswordValid) {
+        errorText.style.display = "none";
+        window.location.href = "https://alamin126666.github.io/BD_SHANTO_2K_APPLE/BD_SHANTO_2K_APPLE.html"; // First page e redirect
+      } else {
+        errorText.style.display = "block";
+        window.location.href = "https://t.me/BDSHANTO2K1E";
+      }
+    }
+  </script>
+</body>
+</html>
